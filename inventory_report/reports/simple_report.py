@@ -1,6 +1,7 @@
 import datetime
 from collections import Counter
 
+
 class SimpleReport:
     @staticmethod
     def generate(products):
@@ -25,7 +26,7 @@ class SimpleReport:
         old_fabricate_date = min(fabricate_date).strftime("%Y-%m-%d")
 
         company_most = Counter(company_most_itens).most_common(1)[0][0]
-        
+
         return (
             f"Data de fabricação mais antiga: {old_fabricate_date}\n"
             f"Data de validade mais próxima: {near_expiration_date}\n"
