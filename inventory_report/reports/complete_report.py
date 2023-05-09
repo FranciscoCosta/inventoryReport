@@ -3,7 +3,6 @@ from collections import Counter
 
 
 class CompleteReport:
-    from collections import Counter
 
     @staticmethod
     def generate(data):
